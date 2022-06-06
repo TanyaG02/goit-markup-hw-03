@@ -88,7 +88,6 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 1px solid red;
 }
 
 .header-link:hover,
@@ -140,7 +139,7 @@ body {
   color: var(--second-gray-text);
 }
 
-.header-mail {
+.header-mail-tel {
   margin-right: 50px;
 }
 
@@ -175,6 +174,9 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-text-color);
+  margin-bottom: var(--typical-margin);
+  max-width: 700px;
+  margin: auto;
   margin-bottom: var(--typical-margin);
 }
 
@@ -336,8 +338,8 @@ body {
   color: var(--accent-color);
 }
 
-.footer-address {
-  margin-top: 20px;
+.footer-logo-margin {
+  margin-bottom: 20px;
 }
 
 .colortext-footer {
@@ -361,7 +363,7 @@ body {
   padding: 10px;
 }
 
-.footer-item {
+.footer-item:not(:last-child) {
   margin-bottom: 9px;
 }
 
@@ -436,9 +438,15 @@ body {
   margin-right: 0px;
 }
 
+.portfolio-item:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
+}
+
 .conteiner-portfolio {
   padding: 20px 24px;
-  border: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
 }
 
 .portfolio-title {
